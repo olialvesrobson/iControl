@@ -1,13 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+html{
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Indie Flower",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*background: url(/img/mario-bg.png) no-repeat;*/
+  background-position: bottom;
+  background-color: #eee 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button, form h5{
+  margin: 20px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+
+.list-divider {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  margin-right: 16px;
+  margin-left: 75px;
+}
+
+.list {
+  margin: 0;
+}
+
+.list li {
+  padding: 0 16px;
+}
+
+.list li .valign-wrapper {
+  min-height: 72px;
+}
+
+.list i.circle {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+.list .title span {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+i.ml-auto {
+  color: rgba(0, 0, 0, 0.26);
 }
